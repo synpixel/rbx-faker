@@ -24,7 +24,7 @@ end
 
 function Faker.getUserInfo(): UserInfo
 	local userId = Faker.getUserId()
-	return UserService:GetUserInfosByUserIdsAsync(userId)[1]
+	return UserService:GetUserInfosByUserIdsAsync({ userId })[1]
 end
 
 function Faker.getUsername(): string
@@ -44,7 +44,7 @@ end
 
 function Faker.createFakePlayer(): FakePlayer
 	local userId = Faker.getUserId()
-	local userInfo: UserInfo = UserService:GetUserInfosByUserIdsAsync(userId)[1]
+	local userInfo: UserInfo = UserService:GetUserInfosByUserIdsAsync({ userId })[1]
 	return {
 		UserId = userId,
 		Name = Players:GetNameFromUserIdAsync(userId),

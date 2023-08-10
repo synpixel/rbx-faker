@@ -1,4 +1,6 @@
-# Faker
+<div align="center">
+    <h1>Faker</h1>
+</div>
 
 Faker is a library that mocks Roblox user data, inspired by [faker-js](https://github.com/faker-js/faker).
 

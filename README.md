@@ -1,6 +1,6 @@
 # Faker
 
-Faker is a library that fetches random Roblox user data, inspired by [faker-js](https://github.com/faker-js/faker).
+Faker is a library that mocks Roblox user data, inspired by [faker-js](https://github.com/faker-js/faker).
 
 ## Installation
 

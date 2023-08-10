@@ -1,0 +1,12 @@
+# Project place file
+/rbx-faker.rbxlx
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
+
+# Wally packages
+/Packages
+
+# Luau LSP sourcemap file
+/sourcemap.json

@@ -8,6 +8,6 @@ license = "MIT"
 authors = ["synpixel"]
 
 exclude = ["**"]
-include = ["src", "src/*", "default.project.json", "wally.lock", "wally.toml"]
+include = ["src", "src/*", "users/out.json", "default.project.json", "wally.lock", "wally.toml"]
 
 [dependencies]

@@ -18,14 +18,6 @@ export type FakePlayer = {
 	DisplayName: string,
 }
 
-local function getKeys(t: { [any]: any }): { any }
-	local keys = {}
-	for key in t do
-		table.insert(keys, key)
-	end
-	return keys
-end
-
 local function getUserInfoById(userId: number): UserInfo?
 	for _, userInfo in Users do
 		if userInfo.id == userId then

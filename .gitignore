@@ -5,6 +5,9 @@
 /*.rbxlx.lock
 /*.rbxl.lock
 
+# Faker build file
+/Faker.rbxm
+
 # Wally packages
 /Packages
 

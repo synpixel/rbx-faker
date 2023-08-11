@@ -27,10 +27,12 @@ export type UserInfo = {
 --- .UserId number
 --- .Name string
 --- .DisplayName string
+--- .AccountAge number
 export type MockPlayer = {
 	UserId: number,
 	Name: string,
 	DisplayName: string,
+	AccountAge: number,
 }
 
 local RNG = Random.new(os.time() + os.clock())
@@ -66,6 +68,10 @@ local function getUserInfoById(userId: number): UserInfo?
 		end
 	end
 	return
+end
+
+local function getAccountAgeFromIsoDate(isoDate: string): number
+	return math.floor((DateTime.now().UnixTimestamp - DateTime.fromIsoDate(isoDate).UnixTimestamp) / 86400)
 end
 
 --- @class Faker
@@ -113,6 +119,7 @@ function Faker.createMockPlayer(): MockPlayer
 		UserId = userInfo.id,
 		Name = userInfo.name,
 		DisplayName = userInfo.displayName,
+		AccountAge = getAccountAgeFromIsoDate(userInfo.created),
 	}
 end
 

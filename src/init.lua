@@ -22,12 +22,12 @@ export type UserInfo = {
 	displayName: string,
 }
 
---- @interface FakePlayer
+--- @interface MockPlayer
 --- @within Faker
 --- .UserId number
 --- .Name string
 --- .DisplayName string
-export type FakePlayer = {
+export type MockPlayer = {
 	UserId: number,
 	Name: string,
 	DisplayName: string,
@@ -81,9 +81,9 @@ function Faker.getUserThumbnail(thumbnailType: Enum.ThumbnailType, thumbnailSize
 	return Players:GetUserThumbnailAsync(userId, thumbnailType, thumbnailSize)
 end
 
---- @return FakePlayer
+--- @return MockPlayer
 --- Creates a mock player.
-function Faker.createFakePlayer(): FakePlayer
+function Faker.createMockPlayer(): MockPlayer
 	local userInfo = Faker.getUserInfo()
 	return {
 		UserId = userInfo.id,
@@ -99,6 +99,26 @@ function Faker.createList<TReturn>(fn: () -> TReturn, count: number): { TReturn 
 	for i = 1, count do
 		table.insert(list, fn())
 	end
+	return list
+end
+
+--- @return { TReturn }
+--- Creates an array of length `count` filled with the return of `fn`. (`fn` is called each iteration, and the table cannot contain duplicates)
+function Faker.createUniqueList<TReturn>(fn: () -> TReturn, count: number): { TReturn }
+	if count > #Users then
+		error("count cannot be higher than the length of Users.")
+	end
+
+	local list = {}
+
+	for i = 1, count do
+		local value = fn()
+		while table.find(value) do
+			value = fn()
+		end
+		table.insert(list, value)
+	end
+
 	return list
 end
 

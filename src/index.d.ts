@@ -9,7 +9,7 @@ export interface UserInfo {
 	displayName: string;
 }
 
-export interface FakePlayer {
+export interface MockPlayer {
 	UserId: number;
 	Name: string;
 	DisplayName: string;
@@ -20,5 +20,6 @@ export declare const getUserId: () => number;
 export declare const getUsername: () => string;
 export declare const getDisplayName: () => string;
 export declare const getUserThumbnail: (thumbnailType: Enum.ThumbnailType, thumbnailSize: Enum.ThumbnailSize) => string;
-export declare const createFakePlayer: () => FakePlayer;
+export declare const createMockPlayer: () => MockPlayer;
 export declare const createList: <TReturn>(fn: () => TReturn, count: number) => TReturn[];
+export declare const createUniqueList: <TReturn>(fn: () => TReturn, count: number) => TReturn[];

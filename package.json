@@ -1,6 +1,6 @@
 {
 	"name": "@rbxts/faker",
-	"version": "0.2.4",
+	"version": "0.2.5",
 	"description": "A library that mocks Roblox user data, inspired by faker-js.",
 	"main": "src/init.lua",
 	"repository": "https://github.com/synpixel/rbx-faker",

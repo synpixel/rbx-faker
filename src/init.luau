@@ -113,7 +113,7 @@ function Faker.createUniqueList<TReturn>(fn: () -> TReturn, count: number): { TR
 
 	for i = 1, count do
 		local value = fn()
-		while table.find(value) do
+		while table.find(list, value) do
 			value = fn()
 		end
 		table.insert(list, value)

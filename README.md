@@ -1,6 +1,7 @@
 <div align="center">
     <h1>Faker</h1>
-    <p>Faker is a library that mocks Roblox user data, inspired by <a>https://github.com/faker-js/faker</a>.</p>
+    <p>A library that mocks Roblox user data, inspired by faker-js.</p>
+    <a href="https://synpixel.github.io/rbx-faker/">View docs →</a>
 </div>
 
 ## Installation

@@ -1,0 +1,7 @@
+title = "rbx-faker"
+
+[home]
+enabled = true
+
+[docusaurus]
+tagline = "A library that mocks Roblox user data, inspired by faker-js."

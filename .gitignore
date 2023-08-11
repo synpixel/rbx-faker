@@ -13,3 +13,6 @@
 
 # Luau LSP sourcemap file
 /sourcemap.json
+
+# Moonwave build
+/build

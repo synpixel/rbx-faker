@@ -90,4 +90,14 @@ function Faker.createFakePlayer(): FakePlayer
 	}
 end
 
+--- @return { TReturn }
+--- Creates an array of length `count` filled with the return value of `fn`. (`fn` is called each iteration)
+function Faker.createList<TReturn>(fn: () -> TReturn, count: number): { TReturn }
+	local list = {}
+	for i = 1, count do
+		table.insert(list, fn())
+	end
+	return list
+end
+
 return Faker

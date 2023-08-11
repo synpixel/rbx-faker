@@ -1,4 +1,5 @@
 title = "rbx-faker"
+gitSourceBranch = "main"
 
 [home]
 enabled = true

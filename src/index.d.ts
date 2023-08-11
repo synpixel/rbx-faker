@@ -13,6 +13,7 @@ export interface MockPlayer {
 	UserId: number;
 	Name: string;
 	DisplayName: string;
+	AccountAge: number;
 }
 
 export declare const getUserInfo: () => UserInfo;

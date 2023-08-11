@@ -9,7 +9,7 @@
 You can install Faker as a wally dependency by adding this to your `wally.toml` file:
 
 ```toml
-Faker = "synpixel/faker@0.2.1"
+Faker = "synpixel/faker@0.2.8"
 ```
 
 ## Why?

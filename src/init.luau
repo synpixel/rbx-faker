@@ -35,6 +35,30 @@ export type MockPlayer = {
 
 local RNG = Random.new(os.time() + os.clock())
 
+local function tableEquals(t1: { [any]: any }, t2: { [any]: any }): boolean
+	for index, value in t1 do
+		if t2[index] ~= value then
+			return false
+		end
+	end
+	return true
+end
+
+local function findInArray(array: { [number]: any }, targetValue: any): number?
+	for index, value in array do
+		if typeof(value) == "table" and typeof(targetValue) == "table" then
+			if not tableEquals(value, targetValue) then
+				continue
+			end
+		elseif value ~= targetValue then
+			continue
+		end
+
+		return index
+	end
+	return
+end
+
 local function getUserInfoById(userId: number): UserInfo?
 	for _, userInfo in Users do
 		if userInfo.id == userId then
@@ -113,7 +137,7 @@ function Faker.createUniqueList<TReturn>(fn: () -> TReturn, count: number): { TR
 
 	for i = 1, count do
 		local value = fn()
-		while table.find(list, value) do
+		while findInArray(list, value) do
 			value = fn()
 		end
 		table.insert(list, value)

@@ -30,4 +30,4 @@ for _, userId in input do
 	table.insert(output, body)
 end
 
-fs.writeFile("users/out.json", serde.encode("json", output))
+fs.writeFile("src/Users.json", serde.encode("json", output))

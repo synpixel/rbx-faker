@@ -1,9 +1,6 @@
 {
-  "name": "rbx-faker",
-  "tree": {
-    "$path": "out",
-    "Users": {
-      "$path": "users/out.json"
-    }
-  }
+	"name": "rbx-faker",
+	"tree": {
+		"$path": "src"
+	}
 }

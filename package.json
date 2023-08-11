@@ -1,0 +1,32 @@
+{
+	"name": "@rbxts/faker",
+	"version": "1.0.0",
+	"description": "A library that mocks Roblox user data, inspired by faker-js.",
+	"main": "src/init.lua",
+	"repository": "https://github.com/synpixel/rbx-faker",
+	"homepage": "https://synpixel.github.io/rbx-faker/",
+	"scripts": {},
+	"keywords": [],
+	"author": "synpixel",
+	"license": "MIT",
+	"typings": "src/index.d.ts",
+	"files": [
+		"out",
+		"!**/*.tsbuildinfo"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@rbxts/compiler-types": "2.1.1-types.0",
+		"@rbxts/types": "^1.0.709",
+		"@typescript-eslint/eslint-plugin": "^6.3.0",
+		"@typescript-eslint/parser": "^6.3.0",
+		"eslint": "^8.46.0",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-plugin-prettier": "^5.0.0",
+		"eslint-plugin-roblox-ts": "^0.0.35",
+		"prettier": "^3.0.1",
+		"typescript": "^5.1.6"
+	}
+}

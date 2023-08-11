@@ -103,7 +103,7 @@ function Faker.createList<TReturn>(fn: () -> TReturn, count: number): { TReturn 
 end
 
 --- @return { TReturn }
---- Creates an array of length `count` filled with the return of `fn`. (`fn` is called each iteration, and the table cannot contain duplicates)
+--- Creates an array of length `count` filled with the return of `fn`. (`fn` is called each iteration, and the table cannot contain duplicate values)
 function Faker.createUniqueList<TReturn>(fn: () -> TReturn, count: number): { TReturn }
 	if count > #Users then
 		error("count cannot be higher than the length of Users.")
@@ -113,7 +113,7 @@ function Faker.createUniqueList<TReturn>(fn: () -> TReturn, count: number): { TR
 
 	for i = 1, count do
 		local value = fn()
-		while table.find(value) do
+		while table.find(list, value) do
 			value = fn()
 		end
 		table.insert(list, value)

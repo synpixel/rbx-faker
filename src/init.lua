@@ -33,6 +33,8 @@ export type FakePlayer = {
 	DisplayName: string,
 }
 
+local RNG = Random.new(os.time() + os.clock())
+
 local function getUserInfoById(userId: number): UserInfo?
 	for _, userInfo in Users do
 		if userInfo.id == userId then
@@ -48,7 +50,7 @@ local Faker = {}
 --- @return UserInfo
 --- Gets some user info from the users list.
 function Faker.getUserInfo(): UserInfo
-	local userId = Users[math.random(1, #Users)].id
+	local userId = Users[RNG:NextInteger(1, #Users)].id
 	return getUserInfoById(userId) :: UserInfo
 end
 

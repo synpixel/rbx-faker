@@ -12,6 +12,7 @@
 	"typings": "src/index.d.ts",
 	"files": [
 		"src",
+		"users/out.json",
 		"!**/*.tsbuildinfo"
 	],
 	"publishConfig": {

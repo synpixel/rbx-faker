@@ -26,4 +26,4 @@ PlayerList {
 }
 ```
 
-![player list example](assets/player-list-example.png)
+![player list example](.moonwave/static/player-list-example.png)

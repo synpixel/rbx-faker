@@ -1,3 +1,5 @@
 # Introduction
 
-rbx-faker is a library that mocks Roblox user data, inspired by faker-js.
+rbx-faker is a library that mocks Roblox data such as group icons and display names, inspired by faker-js.
+
+[View API →](/api)

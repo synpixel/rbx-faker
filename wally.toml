@@ -1,13 +1,13 @@
 [package]
 name = "synpixel/faker"
-description = "A library that fetches random Roblox user data, inspired by faker-js."
-version = "0.2.8"
+description = "A library that mocks Roblox data such as group icons and display names, inspired by faker-js."
+version = "1.0.0"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 license = "MIT"
 authors = ["synpixel"]
 
 exclude = ["**"]
-include = ["src", "src/*", "users/out.json", "default.project.json", "wally.lock", "wally.toml"]
+include = ["src", "src/*", "out", "out/*", "default.project.json", "wally.lock", "wally.toml"]
 
 [dependencies]

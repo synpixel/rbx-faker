@@ -5,4 +5,4 @@ gitSourceBranch = "main"
 enabled = true
 
 [docusaurus]
-tagline = "A library that mocks Roblox user data, inspired by faker-js."
+tagline = "A library that mocks Roblox data such as group icons and display names, inspired by faker-js."

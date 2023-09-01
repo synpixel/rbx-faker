@@ -14,4 +14,4 @@ Faker = "synpixel/faker@1.0.0"
 
 ## Why?
 
-Mocking data in your UI components can be tedious to do by hand, this library simplifies the task significantly.
+Mocking data in your UI component stories can be tedious to do by hand, this library simplifies the task significantly.

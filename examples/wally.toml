@@ -1,0 +1,9 @@
+[package]
+name = "synta/examples"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
+Faker = "synpixel/faker@1.0.0"
+Fusion = "synpixel/fusion@0.3.0-dev.2"

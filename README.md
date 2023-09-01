@@ -15,3 +15,15 @@ Faker = "synpixel/faker@1.0.0"
 ## Why?
 
 Mocking data in your UI component stories can be tedious to do by hand, this library simplifies the task significantly.
+
+## Examples
+
+### Player list story with Fusion
+
+```lua
+PlayerList {
+    Players = Faker.Utils.createUniqueList(Faker.Users.createMockPlayer, 10) :: { Player }
+}
+```
+
+![player list example](assets/player-list-example.png)

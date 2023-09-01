@@ -1,0 +1,15 @@
+{
+  "name": "rbx-faker-examples",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "Packages": {
+        "$path": "Packages"
+      },
+      "UI": {
+        "$path": "ui"
+      }
+    }
+  }
+}

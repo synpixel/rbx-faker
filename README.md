@@ -1,6 +1,6 @@
 <div align="center">
     <h1>Faker</h1>
-    <p>A library that mocks Roblox data such as group icons and display names, inspired by faker-js.</p>
+    <p>A library that generates Roblox data such as group icons and display names, inspired by faker-js.</p>
     <a href="https://synpixel.github.io/rbx-faker/">View docs →</a>
 </div>
 

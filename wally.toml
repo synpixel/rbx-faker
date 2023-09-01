@@ -1,6 +1,6 @@
 [package]
 name = "synpixel/faker"
-description = "A library that mocks Roblox data such as group icons and display names, inspired by faker-js."
+description = "A library that generates Roblox data such as group icons and display names, inspired by faker-js."
 version = "1.0.0"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"

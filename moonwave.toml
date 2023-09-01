@@ -6,7 +6,7 @@ enabled = true
 
 [[home.features]]
 title = "Yield-free"
-description = "None of rbx-faker's methods yield, allowing for quick story-testing."
+description = "None of rbx-faker's methods yield, allowing for quick story testing."
 
 [docusaurus]
 tagline = "A library that mocks Roblox data such as group icons and display names, inspired by faker-js."
